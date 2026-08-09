@@ -1,0 +1,55 @@
+{
+  "version": "5",
+  "specifiers": {
+    "jsr:@handcraft/lib@^4.6.0": "4.6.0",
+    "jsr:@std/html@^1.0.7": "1.0.7",
+    "npm:highlight.js@^11.11.1": "11.11.1",
+    "npm:marked-highlight@^2.2.4": "2.2.4_marked@18.0.9",
+    "npm:marked@^18.0.9": "18.0.9",
+    "npm:parse5@^8.0.1": "8.0.1"
+  },
+  "jsr": {
+    "@handcraft/lib@4.6.0": {
+      "integrity": "cdd34e6b89e651cc3ff46671c04d2e2d77923bdd5d88a6c65d4772c541565975",
+      "dependencies": [
+        "jsr:@std/html"
+      ]
+    },
+    "@std/html@1.0.7": {
+      "integrity": "175c818905a6e75743c69c251395e273d82698e58cfe7dd76268d70e28b8d8fe"
+    }
+  },
+  "npm": {
+    "entities@8.0.0": {
+      "integrity": "sha512-zwfzJecQ/Uej6tusMqwAqU/6KL2XaB2VZ2Jg54Je6ahNBGNH6Ek6g3jjNCF0fG9EWQKGZNddNjU5F1ZQn/sBnA=="
+    },
+    "highlight.js@11.11.1": {
+      "integrity": "sha512-Xwwo44whKBVCYoliBQwaPvtd/2tYFkRQtXDWj1nackaV2JPXx3L0+Jvd8/qCJ2p+ML0/XVkJ2q+Mr+UVdpJK5w=="
+    },
+    "marked-highlight@2.2.4_marked@18.0.9": {
+      "integrity": "sha512-PZxisNMJDduSjc0q6uvjsnqqHCXc9s0eyzxDO9sB1eNGJnd/H1/Fu+z6g/liC1dfJdFW4SftMwMlLvsBhUPrqQ==",
+      "dependencies": [
+        "marked"
+      ]
+    },
+    "marked@18.0.9": {
+      "integrity": "sha512-/Sa4qiiHZxf0/FQdBBowr9q4r10krCwMvpK48FUBdXdUXScDxiQGR9zCPrFgRVR5LU3iySOiIjy09ZQvADir1w==",
+      "bin": true
+    },
+    "parse5@8.0.1": {
+      "integrity": "sha512-z1e/HMG90obSGeidlli3hj7cbocou0/wa5HacvI3ASx34PecNjNQeaHNo5WIZpWofN9kgkqV1q5YvXe3F0FoPw==",
+      "dependencies": [
+        "entities"
+      ]
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@handcraft/lib@^4.6.0",
+      "npm:highlight.js@^11.11.1",
+      "npm:marked-highlight@^2.2.4",
+      "npm:marked@^18.0.9",
+      "npm:parse5@^8.0.1"
+    ]
+  }
+}
