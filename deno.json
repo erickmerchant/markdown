@@ -4,7 +4,7 @@
   "exports": "./mod.ts",
   "license": "MIT",
   "imports": {
-    "@handcraft/lib": "jsr:@handcraft/lib@^4.6.1",
+    "@handcraft/lib": "jsr:@handcraft/lib@^4.7.0",
     "highlight.js": "npm:highlight.js@^11.12.0",
     "marked": "npm:marked@^18.0.13",
     "marked-highlight": "npm:marked-highlight@^2.2.4",
