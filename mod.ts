@@ -1,8 +1,11 @@
 import { Marked } from "marked";
 import { markedHighlight } from "marked-highlight";
+import type { HandcraftNode } from "@handcraft/lib";
+import { h } from "@handcraft/lib/h";
+import attr from "@handcraft/lib/attr";
 import hljs from "highlight.js";
 import * as parse5 from "parse5";
-import { type HandcraftNode, NODE_STATE } from "@handcraft/lib";
+import text from "@handcraft/lib/text";
 
 hljs.configure({ classPrefix: "" });
 
@@ -19,7 +22,7 @@ const marked = new Marked(
 
 export async function parse(
   markdown: string,
-): Promise<Array<HandcraftNode | string>> {
+): Promise<Array<HandcraftNode>> {
   const html = await marked.parse(markdown);
   const parsed = parse5.parseFragment(html);
 
@@ -28,25 +31,25 @@ export async function parse(
 
 function nodeify(
   children: Array<parse5.DefaultTreeAdapterMap["childNode"]>,
-): Array<HandcraftNode | string> {
-  const result: Array<HandcraftNode | string> = [];
+): Array<HandcraftNode> {
+  const result: Array<HandcraftNode> = [];
 
   for (const child of children) {
     if (child.nodeName === "#text") {
-      result.push((child as parse5.DefaultTreeAdapterMap["textNode"]).value);
+      result.push(
+        text((child as parse5.DefaultTreeAdapterMap["textNode"]).value),
+      );
     } else {
       const element = child as parse5.DefaultTreeAdapterMap["element"];
 
-      result.push({
-        [NODE_STATE]: {
-          name: element.nodeName,
-          namespace: element.namespaceURI,
-          attributes: element.attrs.map((
-            attr,
-          ) => ["attr", [attr.name, attr.value]]),
-          children: nodeify(element.childNodes ?? []),
-        },
-      } as HandcraftNode);
+      result.push(
+        h(element.namespaceURI)[element.nodeName](
+          ...element.attrs.map((
+            a,
+          ) => attr[a.name](a.value)),
+          ...nodeify(element.childNodes ?? []),
+        ),
+      );
     }
   }
 
