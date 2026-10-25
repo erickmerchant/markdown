@@ -1,7 +1,7 @@
 {
   "version": "5",
   "specifiers": {
-    "jsr:@handcraft/lib@5": "5.0.0",
+    "jsr:@handcraft/lib@^5.1.0": "5.1.0",
     "jsr:@std/html@^1.0.7": "1.0.7",
     "npm:highlight.js@^11.12.0": "11.12.0",
     "npm:marked-highlight@^2.2.4": "2.2.4_marked@18.1.1",
@@ -9,8 +9,8 @@
     "npm:parse5@^8.0.1": "8.0.1"
   },
   "jsr": {
-    "@handcraft/lib@5.0.0": {
-      "integrity": "2f41c4b08e728a898f69d04117f6fed551370e1b9371b873b64ece96ef831f73",
+    "@handcraft/lib@5.1.0": {
+      "integrity": "1a50a71955bdf986d67ef6a2713ac0977e909d7cc99fa45721a7c908d9850758",
       "dependencies": [
         "jsr:@std/html"
       ]
@@ -45,7 +45,7 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@handcraft/lib@5",
+      "jsr:@handcraft/lib@^5.1.0",
       "npm:highlight.js@^11.12.0",
       "npm:marked-highlight@^2.2.4",
       "npm:marked@^18.1.1",
