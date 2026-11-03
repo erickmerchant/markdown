@@ -1,16 +1,16 @@
 {
   "version": "5",
   "specifiers": {
-    "jsr:@handcraft/lib@^5.2.0": "5.2.0",
+    "jsr:@handcraft/lib@6": "6.0.0",
     "jsr:@std/html@^1.0.7": "1.0.7",
     "npm:highlight.js@^11.12.0": "11.12.0",
-    "npm:marked-highlight@^2.2.4": "2.2.4_marked@18.1.2",
-    "npm:marked@^18.1.2": "18.1.2",
-    "npm:parse5@^8.0.1": "8.0.1"
+    "npm:marked-highlight@^2.2.4": "2.2.4_marked@18.1.3",
+    "npm:marked@^18.1.3": "18.1.3",
+    "npm:parse5@^8.1.0": "8.1.0"
   },
   "jsr": {
-    "@handcraft/lib@5.2.0": {
-      "integrity": "f9235d166f3a0ec0439108eae86520bb8ab176fea5afca9849c499d40a7d7485",
+    "@handcraft/lib@6.0.0": {
+      "integrity": "923fdd02be4c5a5198fea9a70126902a14a69de4a84639531eeae1bb7a7a32f7",
       "dependencies": [
         "jsr:@std/html"
       ]
@@ -20,24 +20,24 @@
     }
   },
   "npm": {
-    "entities@8.0.0": {
-      "integrity": "sha512-zwfzJecQ/Uej6tusMqwAqU/6KL2XaB2VZ2Jg54Je6ahNBGNH6Ek6g3jjNCF0fG9EWQKGZNddNjU5F1ZQn/sBnA=="
+    "entities@9.0.0": {
+      "integrity": "sha512-oJFNDJg3kTPwAD1cNn2+WmUq4wFoo09npc3Ydf1D7ED4smRiWrsKnaLxykrTWgyGEcusc87P5dxlAleol9kpkg=="
     },
     "highlight.js@11.12.0": {
       "integrity": "sha512-nbfWpyRMcMrPMmDwJB+dhX/eiaPKtc2RB+0QZskqJ3WjRA/FDS0e9hZrx8EC/lbEv8gXy98FcDbNa/dspAaJMg=="
     },
-    "marked-highlight@2.2.4_marked@18.1.2": {
+    "marked-highlight@2.2.4_marked@18.1.3": {
       "integrity": "sha512-PZxisNMJDduSjc0q6uvjsnqqHCXc9s0eyzxDO9sB1eNGJnd/H1/Fu+z6g/liC1dfJdFW4SftMwMlLvsBhUPrqQ==",
       "dependencies": [
         "marked"
       ]
     },
-    "marked@18.1.2": {
-      "integrity": "sha512-DfOnvLAQ6WYeWxWO1u4RyFOeqyHup6dks5PPqnoFiooU7ipRvidO/2j8plhAHIiZg574E9ZlzSjUiPMLAzFkgg==",
+    "marked@18.1.3": {
+      "integrity": "sha512-9ChMH8EVVgjgID49nsL6IWxWk5c6GtAsq/xw7U1ggkjkU5AGuv68oLTVlFRtvcUYZtpbNyjyvGo3YDu0fGapiw==",
       "bin": true
     },
-    "parse5@8.0.1": {
-      "integrity": "sha512-z1e/HMG90obSGeidlli3hj7cbocou0/wa5HacvI3ASx34PecNjNQeaHNo5WIZpWofN9kgkqV1q5YvXe3F0FoPw==",
+    "parse5@8.1.0": {
+      "integrity": "sha512-sq3qBFpee5jeocbFbO48VHlGr8sT7mbXS0vxlKN6sottBtJzrOG3998sr0llSZcQAGgfpdmEYAIZE0P9z0dE8w==",
       "dependencies": [
         "entities"
       ]
@@ -45,11 +45,11 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@handcraft/lib@^5.2.0",
+      "jsr:@handcraft/lib@6",
       "npm:highlight.js@^11.12.0",
       "npm:marked-highlight@^2.2.4",
-      "npm:marked@^18.1.2",
-      "npm:parse5@^8.0.1"
+      "npm:marked@^18.1.3",
+      "npm:parse5@^8.1.0"
     ]
   }
 }

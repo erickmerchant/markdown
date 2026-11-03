@@ -1,7 +1,7 @@
 import { Marked } from "marked";
 import { markedHighlight } from "marked-highlight";
-import type { HandcraftNode } from "@handcraft/lib";
-import { h } from "@handcraft/lib/h";
+import type { HandcraftNode } from "@handcraft/lib/types";
+import h from "@handcraft/lib/h";
 import attr from "@handcraft/lib/attr";
 import hljs from "highlight.js";
 import * as parse5 from "parse5";
