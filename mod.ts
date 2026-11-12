@@ -44,9 +44,7 @@ function nodeify(
 
       result.push(
         h(element.namespaceURI)[element.nodeName](
-          ...element.attrs.map((
-            a,
-          ) => attr[a.name](a.value)),
+          ...element.attrs.map((a) => attr[a.name](a.value)),
           ...nodeify(element.childNodes ?? []),
         ),
       );
