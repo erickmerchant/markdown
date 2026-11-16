@@ -1,12 +1,12 @@
 {
   "name": "@erickmerchant/markdown",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "exports": "./mod.ts",
   "license": "MIT",
   "imports": {
     "@handcraft/lib": "jsr:@handcraft/lib@^6.1.2",
     "highlight.js": "npm:highlight.js@^11.12.0",
-    "marked": "npm:marked@^18.2.0",
+    "marked": "npm:marked@^18.2.1",
     "marked-highlight": "npm:marked-highlight@^2.2.4",
     "parse5": "npm:parse5@^8.1.1"
   }
