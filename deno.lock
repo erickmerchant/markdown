@@ -4,8 +4,8 @@
     "jsr:@handcraft/lib@^6.2.0": "6.2.0",
     "jsr:@std/html@^1.0.7": "1.0.7",
     "npm:highlight.js@^11.12.0": "11.12.0",
-    "npm:marked-highlight@^2.2.4": "2.2.4_marked@18.2.1",
-    "npm:marked@^18.2.1": "18.2.1",
+    "npm:marked-highlight@^2.2.4": "2.2.4_marked@18.3.0",
+    "npm:marked@^18.3.0": "18.3.0",
     "npm:parse5@^8.1.1": "8.1.1"
   },
   "jsr": {
@@ -26,14 +26,14 @@
     "highlight.js@11.12.0": {
       "integrity": "sha512-nbfWpyRMcMrPMmDwJB+dhX/eiaPKtc2RB+0QZskqJ3WjRA/FDS0e9hZrx8EC/lbEv8gXy98FcDbNa/dspAaJMg=="
     },
-    "marked-highlight@2.2.4_marked@18.2.1": {
+    "marked-highlight@2.2.4_marked@18.3.0": {
       "integrity": "sha512-PZxisNMJDduSjc0q6uvjsnqqHCXc9s0eyzxDO9sB1eNGJnd/H1/Fu+z6g/liC1dfJdFW4SftMwMlLvsBhUPrqQ==",
       "dependencies": [
         "marked"
       ]
     },
-    "marked@18.2.1": {
-      "integrity": "sha512-ii4bxCTCqqwpT86XZWgJNs+ZnAIZksmLGYMViWA7PDIXYIeNo1x6cDdX3JOip9NM/cI6p8z57FxliACboTruMA==",
+    "marked@18.3.0": {
+      "integrity": "sha512-ed8zmPXlBb3UfGXN5iHMQyMhFpdqLgoV5umUXx/Q1R+FW3q8VpqpyoKUwlENL9appo2UMvNLURDVaT3AMOryGA==",
       "bin": true
     },
     "parse5@8.1.1": {
@@ -48,7 +48,7 @@
       "jsr:@handcraft/lib@^6.2.0",
       "npm:highlight.js@^11.12.0",
       "npm:marked-highlight@^2.2.4",
-      "npm:marked@^18.2.1",
+      "npm:marked@^18.3.0",
       "npm:parse5@^8.1.1"
     ]
   }
